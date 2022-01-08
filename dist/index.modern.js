@@ -1,0 +1,2 @@
+function t(t){const e={current:t};return()=>e}const e=(t,e)=>{const s=(t=>{const e={};return e.state="function"==typeof t?t():t,e.listeners=[],e.setState=(t=>e=>{e!==t.state&&(t.state=e,t.listeners.forEach(e=>{e(t.state)}))})(e),e})(e);return((t,e)=>()=>{const s=t.useState()[1];return t.useEffect(()=>(e.listeners.push(s),()=>{e.listeners=e.listeners.filter(t=>t!==s)}),[]),[e.state,e.setState]})(t,s)};export{t as createSharedRef,e as createSharedState};
+//# sourceMappingURL=index.modern.js.map
